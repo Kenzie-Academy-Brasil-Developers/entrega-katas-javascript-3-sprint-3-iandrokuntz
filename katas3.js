@@ -79,18 +79,23 @@ function kata5() {
         for(let i = 1; i <= 2; i++){
             if( i === 1 ){
                 for(let o = 25; o >= 1; o--){
+                    if(o % 2 !== 0){
                     y += o + ", "
-                    
+                } 
                 }
                                         
             }else{
                 for(let o = 1; o <= 25; o++){
+                   
+                    if(o % 2 !== 0){
+                        
+                    if(o === 25){
                     
-                if(o === 25){
-                    y += o * -1
-                }else{
-                    y += o * -1 + ", "
+                       y += o * -1
+                }   else{
+                       y += o * -1 + ", "
                 }  
+                }
             }
         }
     }
@@ -279,7 +284,7 @@ function kata15() {
     // implemente o código do kata 15 aqui
 
     let y = 0;
-    for(let i = 1; i < 20; i++){
+    for(let i = 1; i <= 20; i++){
         y += i 
     }
     showResults(y)
